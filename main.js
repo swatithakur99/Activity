@@ -40,13 +40,13 @@ function allMatchPageCb(error, response, html) {
 }
 function getAllScoreCardLink(html) {
     console.log("```````````````````````");
-    let searchTool = cheerio.load(html);
+    let searchTool = cheerio.load(html); 
     let scorecardsArr = searchTool("a[data-hover='Scorecard']");
     for (let i = 0; i < scorecardsArr.length; i++) {
         let link = searchTool(scorecardsArr[i]).attr("href");
         let fullAllmatchPageLink= `https://www.espncricinfo.com${link}`;
         console.log(fullAllmatchPageLink);
-        scoreCardObj.processSinglematch(fullAllmatchPageLink)
+        scoreCardObj.processSinglematch(fullAllmatchPageLink);
 
     }
     console.log("`````````````````");
