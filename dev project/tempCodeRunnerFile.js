@@ -1,0 +1,1 @@
+.woocommerce-Tabs-panel.woocommerce-Tabs-panel--part_applications_tab.panel.entry-content.wc-tab
